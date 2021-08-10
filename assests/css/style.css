@@ -6,6 +6,9 @@
     --c_btn_bg: #718138;
     --c_bg_footer: #3F5100;
     --c_bg_icon: #405D4F;
+    --animate-duration: 1s;
+    --animate-delay: 1s;
+    --animate-repeat: 1;
 }
 
 html {
@@ -21,8 +24,77 @@ header{
 }
 
 .text_color_dark{
-    color: var(--c_text_color_dark) !important;
-    opacity: 1!important;
+    color: var(--c_text_color_dark)!important;
+}
+
+.reveal_text{
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+
+.reveal_text::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--c_btn_bg);
+    transition: width 1s ease-in-out;
+}
+
+.reveal_text::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--c_text_color_dark);
+    transition: width 1s ease-in-out;
+    transition-delay: .2s;
+}
+
+.reveal_text:hover, .reveal_text:focus{
+    color: #ffffff;
+    padding-left: .2em;
+}
+
+.reveal_text:hover::before, .reveal_text:hover::after, .reveal_text:focus::before, .reveal_text:focus::after{
+    width: 100%;
+    z-index: -1;
+}
+
+.work_card .image_desc p{
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.work_card .image_desc p::after{
+    content: "";
+    position: absolute;
+    background-color: var(--c_btn_bg);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    clip-path: circle(1rem at center);
+    transition: all .5s ease-in;
+    transform: translateZ(-1px);
+    z-index: -1;
+}
+
+.work_card:hover .image_desc p::after, .work_card:focus .image_desc p::after{  
+    clip-path: circle(15rem at center);
+    opacity: 1;
+}
+
+.work_card:hover .image_desc p, .work_card:focus .image_desc p{
+    color: #ffffff!important;
 }
 
 .navbar-toggler span{
@@ -101,6 +173,14 @@ a.btn:hover > img{
     background-color: var(--c_btn_bg);
 }
 
+.banner_desc{
+    opacity: 0;
+}
+
+.banner_btn{
+    opacity: 0;
+}
+
 .banner_image_placeholder{
     width: 100%;
     height: min(720px, calc(100vh - 56px));
@@ -153,6 +233,16 @@ a.btn:hover > img{
 .card{
     border-radius: 1rem;
     transition: box-shadow .2s linear;
+}
+
+.card, .contact .container, .banner_video{
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 1s ease-in-out;
+}
+.card[data-scroll="in"], .contact .container[data-scroll="in"], .banner_video[data-scroll="in"]{
+    transform: scale(1);
+    opacity: 1;
 }
 
 
@@ -425,6 +515,35 @@ footer p {
     background-color: #cbc1c1;
 }
 
+.animate__animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-duration: var(--animate-duration);
+    animation-duration: var(--animate-duration);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.animate__fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+.animate__animated.animate__delay-1s {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-delay: var(--animate-delay);
+    animation-delay: var(--animate-delay);
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 @media Screen and (min-width: 360px){
     .banner_title, .banner_video_description h1{

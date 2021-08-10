@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./assests/css/bootstrap.min.css" />
 
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> 
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />  -->
     
     <!-- video css -->
     <link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet" />
@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="assests/css/owl.theme.default.min.css">
     
     <!-- animate css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
 
     <!-- css gallery -->
     <link rel="stylesheet" href="./assests/css/imagebox.min.css" />
@@ -77,16 +77,19 @@
     <section class="banner  mt-1">
         <div class="container-fluid p-0">
             <div class="row m-0 w-100">
-                <div class="banner_content col-md-8 d-flex align-items-center pt-md-5">
+                <div class="banner_content col-md-8 d-flex align-items-center pt-md-5 position-relative">
                     <div class="banner_title_sec_height text_color_dark animate__animated animate__fadeIn">
-                        <h1 class="banner_title font-weight-bold mt-md-5">We design the experience, <br />You experience the design</h1>
-                        <p class="title_desc text_color_dark text-justify mt-2 mt-md-5">Eclectic is a full service interior design studio based out of Chennai. We
+                        <h1 class="banner_title font-weight-bold mt-md-5 ml12"><span class="word1">We design the experience,</span> <br /><span class="word2">You experience the design</span></h1>
+                        <p class="title_desc text_color_dark text-justify mt-2 mt-md-5 banner_desc">Eclectic is a full service interior design studio based out of Chennai. We
                             believe that the power of art, architecture and design thinking can transform
                             your surroundings and bring pleasantness around you. With passion and
                             international expertise, we create human-centric designs that balance
                             aesthetics and functionality in a creative manner.</p>
-                        <a href="#contactus" class="btn consult_btn btn-lg mt-md-5">Let's talk <img src="./assests/images/right_arrow_light.png" class="right_arrow_light" /> </a>
+                        <a href="#contactus" class="btn consult_btn btn-lg mt-md-5 banner_btn">Let's talk <img src="./assests/images/right_arrow_light.png" class="right_arrow_light" /> </a>
                     </div>
+                    <div class="squares position-absolute"></div>
+                    <div class="squares position-absolute"></div>
+                    <div class="squares position-absolute"></div>
                 </div>
                 <div class="banner_image w-100 col-md-4 no-gutters p-0 d-flex justify-content-end">
                     <div class="banner_image_placeholder">
@@ -103,12 +106,12 @@
         <div class="container">
             <div class="banner_video_section my-5">
                 <div class="row no-gutters py-5">
-                    <div class="banner_video col-md-6 py-2 d-flex align-items-center animate__animated animate__fadeIn">
+                    <div class="banner_video col-md-6 py-2 d-flex align-items-center">
                         <video id="my-video" class="video-js vjs-theme-city" controls  preload="auto" data-setup="{}">
                             <source src="./assests/images/eclectic kitchen & testimonial.mp4" type="video/mp4" />
                         </video>
                     </div>
-                    <div class="banner_video_description col-md-6 py-2 px-md-5 animate__animated animate__fadeIn">
+                    <div class="banner_video_description col-md-6 py-2 px-md-5">
                         <h1 class="text_color_dark font-weight-bold mt-5 mt-md-0">Why Eclectic?</h1>
                         <p class="title_desc mt-3 mt-md-4 text_color_dark text-justify"> We personally work with clients at every step to
                             deliver a space that truly fits their style & budget. We have successfully completed more than 35 projects in the last 3 years. Be it small scale residences or large commercial projects we strive to achieve
@@ -137,7 +140,7 @@
                             </div>
                             <div class="col-xs-12 col-md-8">
                                 <div class="card-body py-5 p-md-5">
-                                    <h3 class="card-title font-weight-bold pb-3">Full Service Interior Design</h3>
+                                    <h3 class="card-title font-weight-bold py-2 reveal_text">Full Service Interior Design</h3>
                                     <p class="card-text text_color_dark text-justify">We provide personalized turn-key service to our clients where all that’s left for the client is to make design approvals and wait for their space to be transformed. From the initial consultation to the final execution we will walk them through every step of the design process. We specialize in seamlessly transforming new homes to make it ready for occupancy or give a complete makeover to spaces including renovation. We take quality so seriously, that we only use the finest materials and finishes in all our projects.</p>
                                     <a href="#contactus" class="btn consult_btn btn-lg mt-4">Consult now  <img src="./assests/images/right_arrow_light.png" class="right_arrow_light" /></a>                                  
                                 </div>
@@ -154,7 +157,7 @@
                             </div>
                             <div class="col-xs-12">
                                 <div class="card-body py-5">
-                                    <h3 class="card-title font-weight-bold pb-3">3D Design</h3>
+                                    <h3 class="card-title font-weight-bold py-2 reveal_text">3D Design</h3>
                                     <p class="card-text text_color_dark text-justify">Clients can imagine their home before they even step in! We create stunning interior concepts in 3D, using advanced technologies to give a real feel of what a completed home would look like. We take time to understand the needs of the clients and recommend the right solutions tailored to their taste by shaping our combined ideas to reality.</p>
                                     <a href="#contactus" class="btn consult_btn btn-lg mt-4">Consult now  <img src="./assests/images/right_arrow_light.png" class="right_arrow_light" /></a>                                  
                                 </div>
@@ -171,7 +174,7 @@
                             </div>
                             <div class="col-xs-12">
                                 <div class="card-body py-5">
-                                    <h3 class="card-title font-weight-bold pb-3">Consultation</h3>
+                                    <h3 class="card-title font-weight-bold py-2 reveal_text">Consultation</h3>
                                     <p class="card-text text_color_dark text-justify">Our version of design helpline! We keenly listen to our client’s decor dilemmas, vision for the space. We will then discuss what is working for them in each space and come up with a tailor-made solution for them.</p>
                                     <a href="#contactus" class="btn consult_btn btn-lg mt-4">Consult now  <img src="./assests/images/right_arrow_light.png" class="right_arrow_light" /></a>                                  
                                 </div>
@@ -191,37 +194,51 @@
     <section class="works " id="work">
         <div class="container position-relative">
             <h1 class="section_title font-weight-bold position-absolute">Our Works</h1>
-            <div class="work_carousel owl-carousel owl-theme position-relative animate__animated animate__fadeIn">
+            <div class="work_carousel owl-carousel owl-theme position-relative">
                 <div class="item work_card">
-                    <img src="./assests/images/1 bedroom a/Eclectic-interior-bedroom-1a-design-chennai.jpg" alt="" class="w-100" data-imagebox="gallery" />
+                    <img src="./assests/images/1 bedroom a/Eclectic-interior-bedroom-1a-design-banglore.png" alt="" class="w-100" data-imagebox="gallery"  />
                     <div class="image_desc">
-                        <p class="text-center text_color_dark">Bedroom Makeover, Chennai</p>
+                        <p class="text-center text_color_dark">Bedroom Makeover, Banglore</p>
                     </div>
                 </div>
                 <div class="item work_card">
-                    <img src="./assests/images/1 bedroom a/Eclectic-interior-bedroom-1b-design-chennai.jpg" alt="" class="w-100" data-imagebox="gallery" />
+                    <img src="./assests/images/1 bedroom a/Eclectic-interior-bedroom-1b-design-banglore.png" alt="" class="w-100" data-imagebox="gallery"  />
                     <div class="image_desc">
-                        <p class="text-center text_color_dark">Bedroom Makeover, Chennai</p>
+                        <p class="text-center text_color_dark">Bedroom Makeover, Banglore</p>
                     </div>
                 </div>
                 <div class="item work_card">
-                    <img src="./assests/images/1 bedroom a/Eclectic-interior-bedroom-1c-design-chennai.jpg" alt="" class="w-100" data-imagebox="gallery"  />
+                    <img src="./assests/images/1 bedroom a/Eclectic-interior-bedroom-1c-design-banglore.png" alt="" class="w-100" data-imagebox="gallery"  />
                     <div class="image_desc">
-                        <p class="text-center text_color_dark">Bedroom Makeover, Chennai</p>
+                        <p class="text-center text_color_dark">Bedroom Makeover, Banglore</p>
                     </div>
                 </div>
                 <div class="item work_card">
-                    <img src="./assests/images/1 bedroom a/Eclectic-interior-bedroom-1d-design-chennai.jpg" alt="" class="w-100" data-imagebox="gallery"  />
+                    <img src="./assests/images/1 bedroom a/Eclectic-interior-bedroom-1d-design-banglore.png" style="object-position: 65% 100%;" alt="" class="w-100" data-imagebox="gallery"  />
                     <div class="image_desc">
-                        <p class="text-center text_color_dark">Bedroom Makeover, Chennai</p>
+                        <p class="text-center text_color_dark">Bedroom Makeover, Banglore</p>
                     </div>
                 </div>
                 <div class="item work_card">
-                    <img src="./assests/images/1 bedroom a/Eclectic-interior-bedroom-1e-design-chennai.jpg" alt="" class="w-100" data-imagebox="gallery"  />
+                    <img src="./assests/images/1 bedroom a/Eclectic-interior-bedroom-1e-design-banglore.png"  style=" object-position: 23% 100%;" alt="" class="w-100" data-imagebox="gallery"  />
                     <div class="image_desc">
-                        <p class="text-center text_color_dark">Bedroom Makeover, Chennai</p>
+                        <p class="text-center text_color_dark">Bedroom Makeover, Banglore</p>
                     </div>
                 </div>
+
+                <div class="item work_card">
+                    <img src="./assests/images/wardobe/Ecelectic-wardrobe-1a-banglore.jpg"  style=" object-position: 37% 100%;" alt="" class="w-100" data-imagebox="gallery"  />
+                    <div class="image_desc">
+                        <p class="text-center text_color_dark">Wardrobe Design, Banglore</p>
+                    </div>
+                </div>
+                <div class="item work_card">
+                    <img src="./assests/images/wardobe/Ecelectic-wardrobe-1b-banglore.jpg"  style=" object-position: 20% 100%;" alt="" class="w-100" data-imagebox="gallery"  />
+                    <div class="image_desc">
+                        <p class="text-center text_color_dark">Wardrobe Design, Banglore</p>
+                    </div>
+                </div>
+
                 <div class="item work_card">
                     <img src="./assests/images/2 kitchen a/Eclectic-interior-kitchen-design-1a-chennai.jpg" alt="" class="w-100" data-imagebox="gallery"  />
                     <div class="image_desc">
@@ -256,6 +273,36 @@
                     <img src="./assests/images/5 kitchen d/Eclectic-interior-kitchen-design-4b-chennai.jpg" alt="" class="w-100" style="object-position: 46% 100%" data-imagebox="gallery"  />
                     <div class="image_desc">
                         <p class="text-center text_color_dark">Kitchen Visualization, Chennai</p>
+                    </div>
+                </div>
+                <div class="item work_card">
+                    <img src="./assests/images/1 bedroom a/Eclectic-interior-bedroom-1a-design-chennai.jpg" alt="" class="w-100" data-imagebox="gallery" />
+                    <div class="image_desc">
+                        <p class="text-center text_color_dark">Bedroom Makeover, Chennai</p>
+                    </div>
+                </div>
+                <div class="item work_card">
+                    <img src="./assests/images/1 bedroom a/Eclectic-interior-bedroom-1b-design-chennai.jpg" alt="" class="w-100" data-imagebox="gallery" />
+                    <div class="image_desc">
+                        <p class="text-center text_color_dark">Bedroom Makeover, Chennai</p>
+                    </div>
+                </div>
+                <div class="item work_card">
+                    <img src="./assests/images/1 bedroom a/Eclectic-interior-bedroom-1c-design-chennai.jpg" alt="" class="w-100" data-imagebox="gallery"  />
+                    <div class="image_desc">
+                        <p class="text-center text_color_dark">Bedroom Makeover, Chennai</p>
+                    </div>
+                </div>
+                <div class="item work_card">
+                    <img src="./assests/images/1 bedroom a/Eclectic-interior-bedroom-1d-design-chennai.jpg" alt="" class="w-100" data-imagebox="gallery"  />
+                    <div class="image_desc">
+                        <p class="text-center text_color_dark">Bedroom Makeover, Chennai</p>
+                    </div>
+                </div>
+                <div class="item work_card">
+                    <img src="./assests/images/1 bedroom a/Eclectic-interior-bedroom-1e-design-chennai.jpg" alt="" class="w-100" data-imagebox="gallery"  />
+                    <div class="image_desc">
+                        <p class="text-center text_color_dark">Bedroom Makeover, Chennai</p>
                     </div>
                 </div>
                 <div class="item work_card">
@@ -528,7 +575,12 @@
     <!-- <script src="./assests/js/imagebox.ie.min.js"></script> -->
     <script src="./assests/js/imagebox.min.js"></script>
     
-   
+    <!-- anime js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+    <!-- scroll js -->
+    <script src="./assests/js/scroll-out.min.js"></script>
+
     <script>
 
         $(document).ready(function(){
@@ -601,6 +653,48 @@
                 element.addClass('d-block')
             }
         }
+
+        var bannertitle1 = document.querySelector('.ml12 .word1');
+        console.log(bannertitle1, "dddd")
+        bannertitle1.innerHTML = bannertitle1.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        var bannertitle2 = document.querySelector('.ml12 .word2');
+        bannertitle2.innerHTML = bannertitle2.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+    
+        anime.timeline({loop: false})
+        .add({
+            targets: '.ml12 .word1 .letter',
+            translateX: [40,0],
+            translateZ: 0,
+            opacity: [0,1],
+            easing: "easeOutExpo",
+            duration: 1200,
+            delay: (el, i) => 500 + 30 * i
+        })
+        .add({
+            targets: '.ml12 .word2 .letter',
+            translateX: [40,0],
+            translateZ: 0,
+            opacity: [0,1],
+            easing: "easeOutExpo",
+            duration: 1200,
+            delay: (el, i) => 500 + 30 * i
+        })
+        .add({
+            targets: '.banner_desc',
+            opacity: [0,1],
+            easing: "easeInQuad",
+            duration: 500
+        }).add({
+            targets: '.banner_btn',
+            opacity: [0,1],
+            easing: "easeInQuad",
+            duration: 500
+        });
+
+        ScrollOut({
+            targets: '.card, .contact .container, .banner_video, .banner_video_description'
+        })
         
     </script>
 
