@@ -577,6 +577,10 @@ footer p {
         font-size: 3rem;
     }
 
+    .navbar-brand img{
+        width: 12.5rem;
+    }
+
     .banner_title, .banner_video_description h1{
         font-size: 2.5rem;
     }
