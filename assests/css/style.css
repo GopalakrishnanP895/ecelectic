@@ -97,6 +97,10 @@ a.btn:hover > img{
     color: var(--c_green_text);
 }
 
+br {
+    display: none;
+}
+
 .consult_btn{
     padding: .8rem 2rem;
     color: var(--c_white);
@@ -484,6 +488,10 @@ footer p {
 }
 /* media queries */
 @media Screen and (min-width: 920px){
+
+    br {
+        display: block;
+    }
 
     .nav-link{
         font-size: 3rem;
