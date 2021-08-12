@@ -173,20 +173,18 @@ a.btn:hover > img{
     background-color: var(--c_btn_bg);
 }
 
-.banner_desc{
-    opacity: 0;
-}
-
-.banner_btn{
-    opacity: 0;
-}
-
 .banner_image_placeholder{
     width: 100%;
     height: min(720px, calc(100vh - 56px));
     background: url(../images/eclectic-vertical-banner.jpg) no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.owl-stage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #imagebox .ib-content .ib-topbar .ib-buttons .ib-button{
@@ -235,15 +233,15 @@ a.btn:hover > img{
     transition: box-shadow .2s linear;
 }
 
-.card, .contact .container, .banner_video{
-    transform: scale(0);
+/* .card, .contact .container, .banner_video{
+    transform: translateX(-20px);
     opacity: 0;
-    transition: transform 1s ease-in-out;
+    transition: transform .25s linear;
 }
 .card[data-scroll="in"], .contact .container[data-scroll="in"], .banner_video[data-scroll="in"]{
-    transform: scale(1);
+    transform: translateX(0);
     opacity: 1;
-}
+} */
 
 
 .right_arrow_light{

@@ -78,7 +78,7 @@
             <div class="row m-0 w-100">
                 <div class="banner_content col-md-8 d-flex align-items-center pt-md-5 position-relative">
                     <div class="banner_title_sec_height text_color_dark animate__animated animate__fadeIn">
-                        <h1 class="banner_title font-weight-bold mt-md-5 ml12"><span class="word1">We design the experience,</span> <br /><span class="word2">You experience the design</span></h1>
+                        <h1 class="banner_title font-weight-bold mt-md-5 ml12">We design the experience, <br />You experience the design</h1>
                         <p class="title_desc text_color_dark text-justify mt-2 mt-md-5 banner_desc">Eclectic is a full service interior design studio based out of Chennai. We
                             believe that the power of art, architecture and design thinking can transform
                             your surroundings and bring pleasantness around you. With passion and
@@ -86,9 +86,6 @@
                             aesthetics and functionality in a creative manner.</p>
                         <a href="#contactus" class="btn consult_btn btn-lg mt-md-5 banner_btn">Let's talk <img src="./assests/images/right_arrow_light.png" class="right_arrow_light" /> </a>
                     </div>
-                    <div class="squares position-absolute"></div>
-                    <div class="squares position-absolute"></div>
-                    <div class="squares position-absolute"></div>
                 </div>
                 <div class="banner_image w-100 col-md-4 no-gutters p-0 d-flex justify-content-end">
                     <div class="banner_image_placeholder">
@@ -429,25 +426,25 @@
                 <div class="col-xs-12 col-md-8 p-0 animate__animated animate__fadeIn">
                     <div class="feedback_section w-100 h-100">
                         <div class="owl-carousel owl-theme w-100 h-100 feedback_carousel position-relative d-md-flex align-items-center">
-                            <div class="item px-2 py-3 py-md-5 px-md-3 mx-md-auto">
+                            <div class="item px-2 pt-3 py-md-5 px-md-3 mx-md-auto">
                                 <p class="text-center text_color_dark">I had started the flooring work before Mr. Vignesh was appointed as the designer for my home.<br /> Since i wanted professional expertise i sort after his help. I was impressed with his approach and <br />his suggestions for my home, keeping in mind the rest of the work that was already completed.<br /> I loved his energy and the output has come out really well.
                                 </p>
                                 <h3 class="text-center mb-0 font-weight-bold text_color_dark">Mr.L.Dhayanidhi</h3>
                                 <p class="text-center text_color_dark mb-0">Chennai</p>
                             </div>
-                            <div class="item px-2 py-3 py-md-5 px-md-3 mx-md-auto">
+                            <div class="item px-2 py-md-5 px-md-3 mx-md-auto">
                                 <p class="text-center text_color_dark">I am Prithivi from Jataayu Interiors. I approached Vignesh for 3D Visualization. We got everything in the renders as we wanted and they looked so real. We are going to replicate every bit from the renders. We are happy with the works and thank you for the timely completion.
                                 </p>
                                 <h3 class="text-center mb-0 font-weight-bold text_color_dark">Ms.Prithvi N Koundinyaa</h3>
                                 <p class="text-center text_color_dark mb-0">Bangalore</p>
                             </div>
-                            <div class="item px-2 py-3 py-md-5 px-md-5 mx-md-auto">
+                            <div class="item px-2 py-md-5 px-md-5 mx-md-auto">
                                 <p class="text-center text_color_dark">Came across the consulting facilities from Eclectic interior and I am grateful that they helped me in designing the wardrobes, choosing the Colors and some tips to make my dream home. Team is very prompt and has very good ideas as per your requirements.
                                 </p>
                                 <h3 class="text-center mb-0 font-weight-bold text_color_dark">Ms.Ruchira Mohite</h3>
                                 <p class="text-center text_color_dark mb-0">Mumbai</p>
                             </div>
-                            <div class="item px-2 py-3 py-md-5 px-md-5 mx-md-auto">
+                            <div class="item px-2 py-md-5 px-md-5 mx-md-auto">
                                 <p class="text-center text_color_dark">I made my home interior with Eclectic. Their work ethics are commendable. <br />Also, the team's energy is infectious! They get the work done right on schedule.
                                 </p>
                                 <h3 class="text-center mb-0 font-weight-bold text_color_dark">Ms.Sujatha</h3>
@@ -652,44 +649,6 @@
                 element.addClass('d-block')
             }
         }
-
-        var bannertitle1 = document.querySelector('.ml12 .word1');
-        console.log(bannertitle1, "dddd")
-        bannertitle1.innerHTML = bannertitle1.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-        var bannertitle2 = document.querySelector('.ml12 .word2');
-        bannertitle2.innerHTML = bannertitle2.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-    
-        anime.timeline({loop: false})
-        .add({
-            targets: '.ml12 .word1 .letter',
-            translateX: [40,0],
-            translateZ: 0,
-            opacity: [0,1],
-            easing: "easeOutExpo",
-            duration: 1200,
-            delay: (el, i) => 500 + 30 * i
-        })
-        .add({
-            targets: '.ml12 .word2 .letter',
-            translateX: [40,0],
-            translateZ: 0,
-            opacity: [0,1],
-            easing: "easeOutExpo",
-            duration: 1200,
-            delay: (el, i) => 500 + 30 * i
-        })
-        .add({
-            targets: '.banner_desc',
-            opacity: [0,1],
-            easing: "easeInQuad",
-            duration: 500
-        }).add({
-            targets: '.banner_btn',
-            opacity: [0,1],
-            easing: "easeInQuad",
-            duration: 500
-        });
 
         ScrollOut({
             targets: '.card, .contact .container, .banner_video, .banner_video_description'
