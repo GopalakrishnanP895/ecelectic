@@ -87,6 +87,9 @@ a.btn:hover > img{
     color: var(--c_btn_bg)!important;
 }
 
+.header-top{
+    padding-top: 3.5rem;
+}
 .banner{
     background-color: var(--c_bg_gray);
 }
@@ -96,8 +99,6 @@ a.btn:hover > img{
 }
 
 .banner_title_sec_height{
-    height: 100%;
-    margin-top: 15vh;
     color: var(--c_green_text);
 }
 
@@ -113,10 +114,9 @@ br {
 
 .banner_image_placeholder{
     width: 100%;
-    height: min(720px, calc(100vh - 56px));
     background: url(../images/eclectic-vertical-banner.jpg) no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: 100% 100%;
 }
 
 .owl-stage{
@@ -506,6 +506,9 @@ a, a:hover, a:focus {
         padding-left: 0;
         padding-right: 0;
     }
+    .banner_image{
+        min-height: calc(80vh - 3.5rem);
+    }
 }
 /* media queries */
 @media Screen and (min-width: 920px){
@@ -520,6 +523,18 @@ a, a:hover, a:focus {
 
     .navbar-brand img{
         width: 30%;
+    }
+
+    .header-top{
+        padding-top: 4.09rem;
+    }
+
+    .banner{
+        height: min(720px, calc(100vh - 4.09rem));
+    }
+
+    .banner_image{
+        height: 100%!important;
     }
 
     .banner_title, .banner_video_description h1{
@@ -540,7 +555,7 @@ a, a:hover, a:focus {
     }
 
     .feedbackrow {
-        max-height: 37.5rem;
+        /* max-height: 37.5rem; */
     }
 
     .feedback_carousel .item{
@@ -604,12 +619,14 @@ a, a:hover, a:focus {
         padding-left: 1.8rem;
         padding-right: 1.8rem;
     }
+    .banner{
+        height: calc(60vh - 4.09rem);
+    }
+
     .banner_image_placeholder{
-        height: 500px;
+        height: calc(60vh - 4.09rem)!important;
     }
-    .banner_title_sec_height {
-        margin-top: 5vh;
-    }
+    
     .banner_title{
         font-size: 3.1rem;
     }
@@ -632,6 +649,14 @@ a, a:hover, a:focus {
 
 /* ipad style */
 @media only screen and (min-device-width: 768px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+    .banner{
+        height: calc(60vh - 4.09rem);
+    }
+
+    .banner_image_placeholder{
+        height: calc(60vh - 4.09rem)!important;
+    }
+
     .banner_content {
         padding-top: 0!important;
         padding-left: 1.5rem;
@@ -647,9 +672,10 @@ a, a:hover, a:focus {
     .banner_title_sec_height {
         margin-top: 5vh;
     }
-    .banner_image_placeholder{
+  
+    /* .banner_image_placeholder{
         height: 480px;
-    }
+    } */
     .banner_video_description{
         padding-right: 0!important;
         padding-left: 1.5rem!important;
