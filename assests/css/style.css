@@ -186,7 +186,7 @@ iframe{
 }
 
 .works .container{
-    padding-top: 5rem;
+    padding-top: 7rem;
 }
 
 .work_carousel {
@@ -439,8 +439,6 @@ a, a:hover, a:focus {
 
 
 .animate__animated {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
     -webkit-animation-duration: var(--animate-duration);
     animation-duration: var(--animate-duration);
     -webkit-animation-fill-mode: both;
@@ -452,11 +450,14 @@ a, a:hover, a:focus {
     animation-name: fadeIn;
 }
 
-.animate__animated.animate__delay-1s {
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
-    -webkit-animation-delay: var(--animate-delay);
-    animation-delay: var(--animate-delay);
+.animate__fadeIn.collapse{
+    animation-duration: .02s!important;
+    -webkit-animation-duration: .02s!important;
+}
+
+.close_icon.animate__animated.animate__fadeIn{
+    animation-delay: .15s!important;
+    -webkit-animation-delay: .15s!important;
 }
 
 @keyframes fadeIn{
@@ -514,7 +515,7 @@ a, a:hover, a:focus {
     }
 
     .nav-link{
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .navbar-brand img{
@@ -615,6 +616,9 @@ a, a:hover, a:focus {
     .feedbackrow {
         height: 25rem;
     }
+    .works .container{
+        padding-top: 7.5rem!important;
+    }
     .feedback_section .owl-theme .owl-nav{
         padding-left: 1rem!important;
         padding-right: 1rem!important;
@@ -671,10 +675,6 @@ a, a:hover, a:focus {
         width: 75%;
         border-radius: 1rem;
         padding: 1rem!important;
-    }
-
-    .feedback_carousel .item p{
-        /* font-size: .8rem; */
     }
 
     .feedback_section .owl-theme .owl-nav{

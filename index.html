@@ -41,7 +41,7 @@
                 </a>
                 <button class="navbar-toggler mt-2" id="menu_btn" type="button" data-toggle="collapse" data-target="#menubar" aria-controls="menubar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon d-block animate__animated animate__fadeIn"></span>
-                    <span aria-hidden="true" class="close_icon d-none animate__animated animate__fadeIn animate__delay-1s">&times;</span>
+                    <span aria-hidden="true" class="close_icon d-none animate__animated animate__fadeIn">&times;</span>
                 </button>
 
                 <!-- menu's -->
@@ -594,8 +594,8 @@
 
         //menu toggle between hamburger and close icon
         $('#menu_btn').on('click',(e) => {
-            hideAndShowElement($('.navbar-toggler-icon'));
             hideAndShowElement($('.close_icon'));
+            hideAndShowElement($('.navbar-toggler-icon'));
         });
 
         //menu items click event
