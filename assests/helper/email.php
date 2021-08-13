@@ -2323,11 +2323,10 @@ class phpmailerException extends Exception {
 $from     = 'info@eclecticdesigndecor.com';
 $toemail  = 'eclecticdesigndecor@gmail.com';
 
-$intrest       = $_POST['cpmailmessage'];
 $name          = $_POST['cpname'];  
 $email_user    = $_POST['cpmail'];
 $phone         = $_POST['cpphone'];
-$intrest       = $_POST['cpmailmessage'];
+$message       = $_POST['cservice'];
 $subject       = 'New_enquiry';
 
 // $message = 'Hello';

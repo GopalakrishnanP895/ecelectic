@@ -179,6 +179,10 @@ br {
     border-radius: 0.5rem;
 }
 
+.card{
+    border-radius: 1rem;
+}
+
 .section_title{
     font-size: 1.5rem;
     display: inline-flex;
