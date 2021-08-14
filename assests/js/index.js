@@ -62,8 +62,14 @@ function submitForm(){
 
 }
 
+$('.toast_close').on('click', (e) => {
+    $('.toast').removeClass('show');
+});
+
 //contact form valdation and send email
 $('#contact_form_submit').on('click', (e) => {
+    $('.toast').addClass('show');
+    setTimeout(function(){ $('.toast').removeClass('show'); }, 3000);
     validateForm(e, submitForm);
 });
 
