@@ -186,7 +186,7 @@ iframe{
 }
 
 .works .container{
-    padding-top: 7rem;
+    padding-top: 6rem;
 }
 
 .work_carousel {
@@ -261,7 +261,6 @@ iframe{
 
 .glassmorphism{
     display: inline-block;
-    /* background: rgba(138, 148, 96, 0.5); */
     background: rgba(170, 179, 136, 0.5);
     backdrop-filter: blur( 2px );
     -webkit-backdrop-filter: blur( 2px );
@@ -270,7 +269,7 @@ iframe{
 }
 
 .glassmorphism.info{
-    padding: 2rem 1.5rem;
+    /* padding: 2rem 1.5rem; */
     font-size: .8rem;
 }
 
@@ -367,18 +366,16 @@ iframe{
 }
 
 footer{
-    /* background-color: var(--c_bg_footer); */
     height: 5rem;
 }
 
 footer p {
     color: #a1a1a1;
-    /* opacity: 0.5; */
     line-height: 5rem;
 }
 
 .testnomial {
-    padding-top: 10rem!important;
+    padding-top: 6rem!important;
     background: var(--c_bg_gray);
 }
 
@@ -435,8 +432,6 @@ a, a:hover, a:focus {
 .contact_us_icon + a, .address a{
     color: #ffffff!important;
 }
-
-
 
 .animate__animated {
     -webkit-animation-duration: var(--animate-duration);
@@ -513,10 +508,7 @@ a, a:hover, a:focus {
 /* media queries */
 @media Screen and (min-width: 920px){
 
-    br {
-        display: block;
-    }
-
+   
     .nav-link{
         font-size: 2.5rem;
     }
@@ -553,11 +545,6 @@ a, a:hover, a:focus {
     .feedback_section{
         background-color: #241B0C;
     }
-
-    .feedbackrow {
-        /* max-height: 37.5rem; */
-    }
-
     .feedback_carousel .item{
         background-color: var(--c_white); 
         width: 75%;
@@ -583,7 +570,7 @@ a, a:hover, a:focus {
     }
 
     .works .container{
-        padding-top: 10rem;
+        padding-top: 6.5rem;
     }
 
     .work_carousel .owl-nav button.owl-prev{
@@ -595,6 +582,10 @@ a, a:hover, a:focus {
 
     .work_carousel.owl-theme .owl-nav{
         z-index: -1!important;
+    }
+
+    .testnomial {
+        padding-top: 8rem!important;
     }
 
     .vertical_cards {
@@ -610,7 +601,11 @@ a, a:hover, a:focus {
     }
 }
 
-
+@media only screen and (min-width: 1024px){
+    br {
+        display: block;
+    }
+}
 /* ipad pro potrait */
 @media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
     .banner_content {
@@ -649,14 +644,14 @@ a, a:hover, a:focus {
     }
 }
 
-/* ipad pro potrait */
+/* ipad pro landscape */
 @media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape)  {
     .banner_title{
         font-size: 2.6rem;
     }
 }
 
-/* ipad style */
+/* ipad style portrait */
 @media only screen and (min-device-width: 768px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
     .banner{
         height: calc(60vh - 4.09rem);
@@ -732,6 +727,8 @@ a, a:hover, a:focus {
         padding: .5rem!important;
     } */
 }
+
+/* ipad style landscape */
 @media only screen and (min-device-width: 768px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape)  {
     .banner_title{
         font-size: 1.92rem;
