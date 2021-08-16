@@ -68,7 +68,7 @@ a.btn:hover{
     color: #ffffff!important;
 }
 
-a.btn:hover > img{
+a.btn:hover > img, #contact_form_submit:hover > img{
     margin-left: 1rem;
 }
 
@@ -114,7 +114,7 @@ br {
 
 .banner_image_placeholder{
     width: 100%;
-    background: url(../images/eclectic-vertical-banner.jpg) no-repeat;
+    background: url(https://res.cloudinary.com/eclecticinterior/image/upload/v1628956574/eclecticwebsite/projects/minh-pham-OtXADkUh3-I-unsplash_1_hltcku.jpg) no-repeat;
     background-size: cover;
     background-position: 100% 100%;
 }
@@ -237,7 +237,7 @@ iframe{
 }
 
 .contact_left{
-    background: url(../images/contact_us.jpg) no-repeat;
+    background: url(https://res.cloudinary.com/eclecticinterior/image/upload/v1629008039/eclecticwebsite/projects/contact_us_w7kxoc.jpg) no-repeat;
     background-size: cover;
     color: var(--c_bg_gray);
     position: relative;
@@ -254,7 +254,6 @@ iframe{
 }
 
 .contact_left h1, .contact_left .contact_info{
-    /* padding-left: 10%; */
     z-index: 1;
     color: #ffffff;
 }
@@ -265,11 +264,9 @@ iframe{
     backdrop-filter: blur( 2px );
     -webkit-backdrop-filter: blur( 2px );
     border-radius: 1.5rem;
-    /* border: 1px solid rgba(170, 179, 136, 0.5); */
 }
 
 .glassmorphism.info{
-    /* padding: 2rem 1.5rem; */
     font-size: .75rem;
 }
 
@@ -458,7 +455,7 @@ a, a:hover, a:focus {
 .toast{
     max-width: 350px;
     overflow: hidden;
-    font-size: .8rem;
+    font-size: .875rem;
     background-color: rgba(255,255,255,.85);
     background-clip: padding-box;
     border: 1px solid rgba(0,0,0,.1);
@@ -570,6 +567,9 @@ a, a:hover, a:focus {
     }
     .banner_image{
         min-height: calc(80vh - 3.5rem);
+    }
+    .toast{
+        font-size: .8rem;
     }
 }
 /* media queries */
@@ -810,9 +810,6 @@ a, a:hover, a:focus {
         height: 3.125rem!important;
     }
 
-    /* #user_query_form, .contact_left h1, .contact_left .contact_info{
-        padding: .5rem!important;
-    } */
 }
 
 /* ipad style landscape */

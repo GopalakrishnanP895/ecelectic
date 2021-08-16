@@ -69,7 +69,7 @@ $('.toast_close').on('click', (e) => {
 //contact form valdation and send email
 $('#contact_form_submit').on('click', (e) => {
     $('.toast').addClass('show');
-    setTimeout(function(){ $('.toast').removeClass('show'); }, 3000);
+    setTimeout(function(){ $("#contact_form_submit"). attr("disabled", true); }, 3000);
     validateForm(e, submitForm);
 });
 
